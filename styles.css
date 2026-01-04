@@ -226,13 +226,12 @@ footer {
 #nav-toggle {
   display: none;
 }
-
 /* MOBILE STYLES */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
+  .safari {
+    grid-template-columns: 1fr;
   }
-
+}
   .nav-links {
     display: none;
     flex-direction: column;
