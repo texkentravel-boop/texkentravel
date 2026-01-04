@@ -20,7 +20,7 @@ img {
 }
 
 /* =========================
-   Navigation (Desktop + Mobile)
+   Navigation
 ========================= */
 .navbar {
   background: #3b2f2f;
@@ -52,6 +52,11 @@ img {
   text-decoration: underline;
 }
 
+/* Hide checkbox */
+#nav-toggle {
+  display: none;
+}
+
 /* Hamburger */
 .hamburger {
   display: none;
@@ -59,11 +64,7 @@ img {
   cursor: pointer;
 }
 
-#nav-toggle {
-  display: none;
-}
-
-/* Mobile Nav */
+/* MOBILE */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -89,6 +90,7 @@ img {
     display: flex;
   }
 }
+
 
 /* =========================
    Hero
