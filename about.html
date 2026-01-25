@@ -1,99 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>About & Contact | TexKen Travel</title>
-  <meta name="description" content="Learn more about TexKen Travel and how to get in touch to begin planning your next journey.">
+  <meta name="description" content="Learn more about TexKen Travel and how to get in touch to begin planning your next journey." />
 
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <style>
+    :root {
+      --primary: #1f4d3a;
+      --accent: #c9a24d;
+      --light: #f9f9f9;
+      --dark: #222;
+      --max-width: 1100px;
+    }
 
-<body>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<nav class="navbar">
- <div class="nav-brand">TexKen Travel</div>
-  <input type="checkbox" id="nav-toggle">
-  <label for="nav-toggle" class="hamburger">☰</label>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: #fff;
+    }
 
-  <div class="nav-links">
- <a href="/texkentravel/index.html">Home</a>
-<a href="/texkentravel/about.html">About & Contact</a>
-<a href="/texkentravel/safaris.html">Safari Information</a>
-<a href="/texkentravel/quick-booking.html">Quick Booking</a>
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-  </div>
-</nav>
-<header>
-  <h1>About TexKen Travel</h1>
-  <p>Personalized travel planning with care and expertise</p>
-</header>
+    a:hover {
+      text-decoration: underline;
+    }
 
-<section id="about-story">
-  <h2>Travel Rooted in Experience</h2>
-  <p>
-    Travel has been a defining part of my life for as long as I can remember.
-    From early adventures close to home to exploring destinations across the world,
-    travel has shaped how I connect with people, cultures, and places.
-  </p>
-  <p>
-    A pivotal moment in my journey came while traveling through Kenya.
-    Experiencing the country’s landscapes, wildlife, and—most importantly—
-    the strength and warmth of the local communities left a lasting impression.
-    Safaris were more than game drives; they were moments of perspective,
-    connection, and respect for the natural world.
-  </p>
-  <p>
-    That experience inspired the foundation of TexKen Travel.
-    My work as a travel advisor extends far beyond Africa. I have traveled extensively throughout Europe,
-    beginning with my first international experience at eighteen, and have since
-    continued exploring destinations around the globe.
-  </p>
-  <p>
-    Today, I use that firsthand knowledge to help clients plan thoughtful,
-    well-supported journeys—whether that means a once-in-a-lifetime safari,
-    a cruise, a European getaway, a theme park vacation, or a meaningful
-    custom itinerary anywhere in the world.
-  </p>
-  <p>
-    In addition to planning travel, I also mentor those who feel called to turn
-    their love of travel into a profession. If you’re interested in learning
-    how to become a travel advisor and build a business rooted in authenticity,
-    flexibility, and global connection, I’m happy to share more.
-  </p>
-  <p>
-    <strong>
-      Have questions about travel planning—or curious about becoming a travel advisor?
-      I’d love to connect.
-    </strong>
-  </p>
-</section>
+    /* NAVIGATION */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      background: var(--primary);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-<section>
-  <h2>Contact Information</h2>
-  <p>
-    📧 <a href="mailto:hello@texkentravel.com">hello@texkentravel.com</a><br>
-    📸 <a href="https://www.instagram.com/texkentravel" target="_blank">Instagram</a><br>
-    📘 <a href="https://www.facebook.com/texkentravel" target="_blank">Facebook</a>
-  </p>
+    .nav-brand {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
 
-  <p>
-    <a class="resource-btn" href="https://forms.gle/bzbvVVSmehYwdzfa9" target="_blank">
-      Start a Travel Request
-    </a>
-  </p>
-</section>
+    .nav-links {
+      display: flex;
+      gap: 1.25rem;
+    }
 
-<footer>
-  <p><strong>TexKen Travel</strong> | Independent Travel Advisor</p>
-  <p>Custom Travel Planning</p>
-  <p>
-    <a href="mailto:hello@texkentravel.com">hello@texkentravel.com</a> |
-    <a href="https://www.instagram.com/texkentravel" target="_blank">Instagram</a> |
-    <a href="https://www.facebook.com/texkentravel" target="_blank">Facebook</a>
-  </p>
-</footer>
+    .nav-links a {
+      color: #fff;
+      font-size: 0.95rem;
 
-</body>
-</html>
