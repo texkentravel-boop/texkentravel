@@ -1,68 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>TexKen Travel | Custom Travel Planning</title>
-  <meta name="description" content="TexKen Travel is a Kenya Safari Travel Advisor specializing in custom safaris, cruises, Disney vacations, destination weddings, and thoughtfully planned travel worldwide.">
+  <meta name="description" content="TexKen Travel is a boutique travel advisory specializing in custom safaris, cruises, destination weddings, theme park vacations, and thoughtfully planned travel worldwide." />
 
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <style>
+    :root {
+      --primary: #1f4d3a;
+      --accent: #c9a24d;
+      --dark: #222;
+      --light: #f7f7f7;
+      --max-width: 1050px;
+    }
 
-<body>
-<nav class="navbar">
-<div class="nav-brand">TexKen Travel</div>
-  <input type="checkbox" id="nav-toggle">
-  <label for="nav-toggle" class="hamburger">☰</label>
-  <div class="nav-links">
-   <a href="/texkentravel/index.html">Home</a>
-<a href="/texkentravel/about.html">About & Contact</a>
-<a href="/texkentravel/safaris.html">Safari Information</a>
-<a href="/texkentravel/quick-booking.html">Quick Booking</a>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  </div>
-</nav>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--dark);
+      line-height: 1.6;
+      background: #fff;
+    }
 
-<header>
-  <h1>TexKen Travel</h1>
-  <p>Full-Service Travel Planning</p>
-</header>
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-<section>
-  <h2>Thoughtfully Planned Travel, Anywhere in the World</h2>
-  <p>
-    TexKen Travel is a boutique travel advisory focused on meaningful, well-planned journeys.
-    I help clients plan cruises, theme park vacations, destination weddings, resorts, and custom itineraries worldwide.
-  </p>
-</section>
-<section>
-  <h2>Travel Services Offered</h2>
-  <div class="services">
-    <div class="card"><h3>Kenya & African Safaris</h3><p>Custom safari planning with trusted local partners.</p></div>
-    <div class="card"><h3>Cruises</h3><p>Ocean and river cruises for couples and families.</p></div>
-    <div class="card"><h3>Disney & Universal</h3><p>Theme park vacations planned with ease.</p></div>
-    <div class="card"><h3>Destination Weddings</h3><p>Carefully coordinated wedding travel.</p></div>
-    <div class="card"><h3>Hotels & Resorts</h3><p>Hand-selected stays worldwide.</p></div>
-    <div class="card"><h3>Vacation Rentals</h3><p>Airbnb and villa guidance.</p></div>
-  </div>
-</section>
-<section class="cta">
-  <h2>Ready to Start Planning?</h2>
-  <p>Begin with a simple travel request.</p>
-  <a href="https://forms.gle/bzbvVVSmehYwdzfa9" target="_blank">Start a Travel Request</a>
-</section>
+    a:hover {
+      text-decoration: underline;
+    }
 
-<footer>
- </div>
-  <p><strong>TexKen Travel</strong> | Independent Travel Advisor</p>
-  <p>Custom Travel Planning</p>
-  <p>
-    <a href="mailto:hello@texkentravel.com">hello@texkentravel.com</a> |
-    <a href="https://www.instagram.com/texkentravel" target="_blank">Instagram</a> |
-    <a href="https://www.facebook.com/texkentravel" target="_blank">Facebook</a>
-  </p>
-</footer>
+    /* NAV */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      background: var(--primary);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-</body>
-</html>
+    .nav-brand {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.25rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      font-size: 0.95rem;
+    }
+
+    #nav-toggle,
+    .hamburger {
+      display: none;
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      padding: 4rem 1.5rem 3rem;
+      background: var(--light);
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: var(--max-width);
+      margin: 2.25rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    section p {
+      margin-bottom: 0.75rem;
+    }
+
+    /* SERVICES – NO BOXES */
+    .services-list {
+      margin-top: 0.5rem;
+    }
+
+    .service-item {
+      margin-bottom: 0.6rem;
+    }
+
+    .service-item strong {
+      display: block;
+      font-weight: 600;
+      color: #000;
+    }
+
+    .service-item span {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      background: var(--primary);
+      color: #fff;
+      paddin
