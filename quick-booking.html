@@ -1,76 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Travel Resources | TexKen Travel</title>
-  <meta name="description" content="Trusted travel resources and booking partners supported by TexKen Travel.">
+  <meta name="description" content="Trusted travel resources and booking partners supported by TexKen Travel." />
 
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <style>
+    :root {
+      --primary: #1f4d3a;
+      --dark: #222;
+      --light: #f6f6f6;
+      --max-width: 1000px;
+    }
 
-<body>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<nav class="navbar">
- <div class="nav-brand">TexKen Travel</div>
-  <input type="checkbox" id="nav-toggle">
-  <label for="nav-toggle" class="hamburger">☰</label>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--dark);
+      line-height: 1.6;
+      background: #fff;
+    }
 
-  <div class="nav-links">
-  <a href="/texkentravel/index.html">Home</a>
-<a href="/texkentravel/about.html">About & Contact</a>
-<a href="/texkentravel/safaris.html">Safari Information</a>
-<a href="/texkentravel/quick-booking.html">Quick Booking</a>
-  </div>
-</nav>
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-<header>
-  <h1>Travel Resources</h1>
-</header>
+    a:hover {
+      text-decoration: underline;
+    }
 
-<section id="resources">
-  <h2>DIY Booking Options</h2>
-  <div class="resources">
-    <p>
-      Prefer to explore and book tours or experiences on your own?
-      TexKen Travel partners with trusted global platforms to give clients
-      access to curated experiences at travel-advisor pricing.
-    </p>
-    <p>
-      These direct links allow you to book select activities, excursions,
-      and guided itineraries independently — while still benefiting from
-      vetted providers and professional travel standards.
-    </p>
+    /* NAV */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      background: var(--primary);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-    <div class="resource-buttons">
-      <a class="resource-btn"
-         href="https://www.viator.com/?pid=P00011640&uid=U00748593&mcid=58086&currency=USD"
-         target="_blank" rel="noopener">
-        Explore Experiences with Viator
-      </a>
+    .nav-brand {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
 
-      <a class="resource-btn"
-         href="https://www.exoticca.com/?advisor_token=amanda-jarvis-019a0de5-d680-7354-ac52-6e440771cfc2"
-         target="_blank" rel="noopener">
-        Browse Guided Tours with Exoticca
-      </a>
-    </div>
-    <p class="disclaimer">
-      *TexKen Travel may earn a commission if you book through these links,
-      at no additional cost to you.
-    </p>
-  </div>
-</section>
+    .nav-links {
+      display: flex;
+      gap: 1.25rem;
+    }
 
-<footer>
-  <p><strong>TexKen Travel</strong> | Independent Travel Advisor</p>
-  <p>Custom Travel Planning</p>
-  <p>
-    <a href="mailto:hello@texkentravel.com">hello@texkentravel.com</a> |
-    <a href="https://www.instagram.com/texkentravel" target="_blank">Instagram</a> |
-    <a href="https://www.facebook.com/texkentravel" target="_blank">Facebook</a>
-  </p>
-</footer>
-</body>
-</html>
+    .nav-links a {
+      color: #fff;
+      font-size: 0.95rem;
+    }
+
+    #nav-toggle,
+    .hamburger {
+      display: none;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--light);
+      padding: 3.5rem 1.5rem 2.75rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.3rem;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: var(--max-width);
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    section p {
+      margin-bottom: 0.85rem;
+    }
+
+    /* RESOURCE LINKS */
+    .resource-links {
+      margin-top: 1.25rem;
+    }
+
+    .resource-link {
+      margin-bottom: 1.1rem;
+    }
+
+    .resource-link strong {
+      display: b
+
