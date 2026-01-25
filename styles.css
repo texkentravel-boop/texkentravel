@@ -19,6 +19,16 @@ img {
   display: block;
 }
 
+a {
+  color: #3b2f2f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* =========================
    Navigation
 ========================= */
@@ -44,8 +54,6 @@ img {
 
 .nav-links a {
   color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
 }
 
 .nav-links a:hover {
@@ -64,7 +72,7 @@ img {
   cursor: pointer;
 }
 
-/* MOBILE */
+/* MOBILE NAV */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -90,7 +98,6 @@ img {
     display: flex;
   }
 }
-
 
 /* =========================
    Hero
@@ -133,6 +140,10 @@ h1, h2, h3 {
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 16px;
 }
 
 /* =========================
@@ -187,24 +198,26 @@ h2 {
 }
 
 .resource-btn {
+  background: #3b2f2f;
+  color: #ffffff;
   padding: 14px 24px;
   border-radius: 30px;
+  font-weight: 600;
+}
+
+.resource-btn:hover {
+  background: #2b1d14;
   text-decoration: none;
-  font-weight: bold;
-  background: #c2a36b;
-  color: #3b2f2f;
 }
 
 /* =========================
-   CTA
+   CTA Section
 ========================= */
 .cta {
   background: #3b2f2f;
   color: #ffffff;
   text-align: center;
   padding: 70px 20px;
-  border-radius: 20px;
-  margin-top: 60px;
 }
 
 .cta h2 {
@@ -214,36 +227,51 @@ h2 {
 .cta a {
   display: inline-block;
   margin-top: 20px;
-  padding: 14px 30px;
-  background: #c2a36b;
+  background: #ffffff;
   color: #3b2f2f;
-  text-decoration: none;
+  padding: 14px 28px;
   border-radius: 30px;
-  font-weight: bold;
+  font-weight: 600;
+}
+
+.cta a:hover {
+  background: #e8dfd6;
+  text-decoration: none;
 }
 
 /* =========================
-   Footer
+   Footer (UPDATED – Light Brown)
 ========================= */
 footer {
-background: #2b2b2b;
-  color: #ffffff; 
+  background-color: #e8dfd6; /* light warm brown */
+  color: #3b2f2f;
+  padding: 40px 20px;
   text-align: center;
-  padding: 25px;
-  font-size: 0.9rem;
-  margin-top: 60px;
 }
 
-/* =========================
-   Utilities
-========================= */
-.disclaimer {
+footer p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+footer strong {
+  font-weight: 600;
+}
+
+/* Footer Links – High Contrast */
+footer a {
+  color: #5a3f2e;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: #2b1d14;
+  text-decoration: none;
+}
+
+footer .disclaimer {
   font-size: 0.85rem;
-  color: #555;
-  margin-top: 20px;
+  color: #5f554e;
+  margin-top: 15px;
 }
-
-/* =========================
-   Responsive Type
-===
-
