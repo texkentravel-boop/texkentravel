@@ -7,147 +7,16 @@
   <title>Quick Booking | TexKen Travel</title>
   <meta name="description" content="Quick booking options and trusted travel resources supported by TexKen Travel.">
 
-  <style>
-    :root {
-      --primary: #1f4d3a;
-      --accent: #c9a24d;
-      --dark: #222;
-      --light: #f7f7f7;
-      --max-width: 1050px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--dark);
-      line-height: 1.6;
-      background: #fff;
-    }
-
-    a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* NAV */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 1.5rem;
-      background: var(--primary);
-      color: #fff;
-    }
-
-    .nav-brand {
-      font-weight: 700;
-      font-size: 1.2rem;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 1.25rem;
-    }
-
-    .nav-links a {
-      color: #fff;
-      font-size: 0.95rem;
-    }
-
-    /* HEADER */
-    header {
-      text-align: center;
-      padding: 4rem 1.5rem 3rem;
-      background: var(--light);
-    }
-
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.4rem;
-      color: var(--primary);
-    }
-
-    header p {
-      font-size: 1.05rem;
-      color: #555;
-    }
-
-    /* CONTENT */
-    section {
-      max-width: var(--max-width);
-      margin: 2.5rem auto;
-      padding: 0 1.5rem;
-    }
-
-    section h2 {
-      font-size: 1.6rem;
-      color: var(--primary);
-      margin-bottom: 0.75rem;
-    }
-
-    section p {
-      margin-bottom: 0.85rem;
-      max-width: 720px;
-    }
-
-    .resource-links {
-      margin-top: 1.25rem;
-    }
-
-    .resource-link {
-      margin-bottom: 1rem;
-      line-height: 1.5;
-    }
-
-    .resource-link strong {
-      display: block;
-      font-weight: 600;
-      margin-bottom: 0.15rem;
-      color: #000;
-    }
-
-    .resource-link a {
-      color: #6b4f3f;
-      text-decoration: underline;
-      font-weight: 500;
-    }
-
-    .resource-link a:hover {
-      text-decoration: none;
-    }
-
-    .disclaimer {
-      margin-top: 1.5rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #f2efe9;
-      padding: 2rem 1.5rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #444;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav class="navbar">
   <div class="nav-brand">TexKen Travel</div>
+  <input type="checkbox" id="nav-toggle">
+  <label for="nav-toggle" class="hamburger">☰</label>
+
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="about.html">About & Contact</a>
@@ -156,52 +25,56 @@
   </div>
 </nav>
 
-<!-- HEADER -->
 <header>
   <h1>Quick Booking Resources</h1>
   <p>Trusted travel tools for independent planning</p>
 </header>
 
-<!-- CONTENT -->
 <section>
   <h2>Prefer to Book Independently?</h2>
 
   <p>
-    While TexKen Travel specializes in fully customized travel planning, some travelers
+    While TexKen Travel specializes in customized travel planning, some travelers
     prefer to book individual tours or experiences on their own.
   </p>
 
   <p>
-    The trusted resources below allow you to do just that—while still supporting
+    These trusted partners allow you to book independently while still supporting
     TexKen Travel.
   </p>
 
   <div class="resource-links">
     <div class="resource-link">
       <strong>Viator – Tours & Experiences</strong>
-      <a href="https://www.viator.com/?pid=P00011640&uid=U00748593&mcid=58086&currency=USD" target="_blank" rel="noopener">
+      <a href="https://www.viator.com/?pid=P00011640&uid=U00748593&mcid=58086&currency=USD"
+         target="_blank" rel="noopener">
         Explore activities, excursions, and local experiences worldwide
       </a>
     </div>
 
     <div class="resource-link">
       <strong>Exoticca – Guided Multi-Day Tours</strong>
-      <a href="https://www.exoticca.com/?advisor_token=amanda-jarvis-019a0de5-d680-7354-ac52-6e440771cfc2" target="_blank" rel="noopener">
+      <a href="https://www.exoticca.com/?advisor_token=amanda-jarvis-019a0de5-d680-7354-ac52-6e440771cfc2"
+         target="_blank" rel="noopener">
         Browse professionally guided tours and curated itineraries
       </a>
     </div>
   </div>
 
   <p class="disclaimer">
-    *TexKen Travel may earn a commission if you book through these links, at no additional
-    cost to you.
+    *TexKen Travel may earn a commission if you book through these links,
+    at no additional cost to you.
   </p>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <p><strong>TexKen Travel</strong> | Independent Travel Advisor</p>
-  <p>Custom Travel Planning • Worldwide</p>
+  <p>Custom Travel Planning</p>
+  <p>
+    <a href="mailto:hello@texkentravel.com">hello@texkentravel.com</a> |
+    <a href="https://www.instagram.com/texkentravel" target="_blank">Instagram</a> |
+    <a href="https://www.facebook.com/texkentravel" target="_blank">Facebook</a>
+  </p>
 </footer>
 
 </body>
