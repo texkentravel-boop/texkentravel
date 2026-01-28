@@ -13,7 +13,7 @@
       --accent: #c9a24d;
       --light: #f9f9f9;
       --dark: #222;
-      --max-width: 1100px;
+      --max-width: 1000px;
     }
 
     * {
@@ -24,9 +24,9 @@
 
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.6;
+      line-height: 1.7;
       color: var(--dark);
-      background: #fff;
+      background: #ffffff;
     }
 
     a {
@@ -47,15 +47,11 @@
       padding: 1rem 1.5rem;
       background: var(--primary);
       color: #fff;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
 
     .nav-brand {
       font-size: 1.25rem;
       font-weight: 700;
-      letter-spacing: 0.5px;
     }
 
     .nav-links {
@@ -66,4 +62,134 @@
     .nav-links a {
       color: #fff;
       font-size: 0.95rem;
+    }
+
+    /* HEADER */
+    header {
+      padding: 4rem 1.5rem;
+      background: var(--light);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    section p {
+      margin-bottom: 1rem;
+    }
+
+    /* CONTACT */
+    .contact-links a {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #f2efe9;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    footer a {
+      color: #3b2f2f;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="nav-brand">TexKen Travel</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About & Contact</a>
+    <a href="safaris.html">Safari Information</a>
+    <a href="quick-booking.html">Quick Booking</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header>
+  <h1>About TexKen Travel</h1>
+  <p>Personalized travel planning with care and experience</p>
+</header>
+
+<!-- ABOUT -->
+<section>
+  <h2>Travel Rooted in Experience</h2>
+
+  <p>
+    Travel has been a defining part of my life for as long as I can remember.
+    From early adventures close to home to exploring destinations across the world,
+    travel has shaped how I connect with people, cultures, and places.
+  </p>
+
+  <p>
+    A pivotal moment in my journey came while traveling through Kenya.
+    Experiencing the country’s landscapes, wildlife, and the warmth of the local
+    communities left a lasting impression and inspired the foundation of TexKen Travel.
+  </p>
+
+  <p>
+    Today, I help clients plan thoughtful, well-supported journeys — from once-in-a-lifetime
+    safaris to cruises, destination weddings, theme park vacations, and custom itineraries
+    worldwide.
+  </p>
+
+  <p>
+    I also mentor those interested in becoming travel advisors and building businesses
+    rooted in authenticity, flexibility, and global connection.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <h2>Contact Information</h2>
+
+  <div class="contact-links">
+    <p>
+      📧 <a href="mailto:hello@texkentravel.com">hello@texkentravel.com</a>
+    </p>
+    <p>
+      📸 <a href="https://www.instagram.com/texkentravel" target="_blank">Instagram</a> |
+      📘 <a href="https://www.facebook.com/texkentravel" target="_blank">Facebook</a>
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>TexKen Travel</strong> | Independent Travel Advisor</p>
+  <p>Custom Travel Planning • Safaris • Cruises • Global Travel</p>
+</footer>
+
+</body>
+</html>
 
